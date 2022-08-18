@@ -192,6 +192,18 @@ dotenv = ["python-dotenv (>=0.10.4)"]
 email = ["email-validator (>=1.0.3)"]
 
 [[package]]
+name = "pymysql"
+version = "1.0.2"
+description = "Pure Python MySQL Driver"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.extras]
+rsa = ["cryptography"]
+ed25519 = ["PyNaCl (>=1.4.0)"]
+
+[[package]]
 name = "sqlparse"
 version = "0.4.2"
 description = "A non-validating SQL parser."
@@ -206,6 +218,14 @@ description = "A lil' TOML parser"
 category = "main"
 optional = false
 python-versions = ">=3.7"
+
+[[package]]
+name = "types-pymysql"
+version = "1.0.6"
+description = "Typing stubs for PyMySQL"
+category = "main"
+optional = false
+python-versions = "*"
 
 [[package]]
 name = "types-pytz"
@@ -242,7 +262,7 @@ python-versions = ">=2"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "3dd78cabd8b5dbe9a7f45bdb723617b81643628c6f251e9a8df3473ec2d352b2"
+content-hash = "181a0d6e50ace0e2e48fdfa53e39965356f773435b32ef1adfb5bbb852b8418b"
 
 [metadata.files]
 asgiref = []
@@ -268,11 +288,13 @@ pathspec = [
 ]
 platformdirs = []
 pydantic = []
+pymysql = []
 sqlparse = [
     {file = "sqlparse-0.4.2-py3-none-any.whl", hash = "sha256:48719e356bb8b42991bdbb1e8b83223757b93789c00910a616a071910ca4a64d"},
     {file = "sqlparse-0.4.2.tar.gz", hash = "sha256:0c00730c74263a94e5a9919ade150dfc3b19c574389985446148402998287dae"},
 ]
 tomli = []
+types-pymysql = []
 types-pytz = []
 types-pyyaml = []
 typing-extensions = []
